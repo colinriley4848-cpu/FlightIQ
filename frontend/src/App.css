@@ -1,0 +1,72 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f1117;
+  color: #e8eaf0;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.app { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
+
+.app-header { text-align: center; margin-bottom: 2rem; }
+.app-header h1 { font-size: 2.2rem; font-weight: 700; color: #60a5fa; }
+.app-header p { color: #888; margin-top: 0.4rem; }
+
+.search-form { background: #1a1d2e; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.form-row { display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.form-group { display: flex; flex-direction: column; flex: 1; min-width: 140px; }
+.form-group label { font-size: 0.75rem; color: #888; margin-bottom: 0.3rem; text-transform: uppercase; }
+.form-group input, .form-group select {
+  background: #0f1117; border: 1px solid #2e3347; border-radius: 6px;
+  color: #e8eaf0; padding: 0.5rem 0.75rem; font-size: 0.95rem;
+}
+.form-group input:focus, .form-group select:focus {
+  outline: none; border-color: #60a5fa;
+}
+
+.search-btn {
+  width: 100%; padding: 0.75rem; background: #2563eb; color: white;
+  border: none; border-radius: 8px; font-size: 1rem; font-weight: 600;
+  cursor: pointer; margin-top: 0.5rem; transition: background 0.2s;
+}
+.search-btn:hover { background: #1d4ed8; }
+.search-btn:disabled { background: #374151; cursor: not-allowed; }
+
+.error-banner {
+  background: #3b1a1a; border: 1px solid #ef4444; color: #fca5a5;
+  padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1rem;
+}
+
+.buy-wait-widget {
+  border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.25rem;
+  border: 1px solid transparent;
+}
+.buy-wait-widget.buy { background: #0d2b1a; border-color: #16a34a; }
+.buy-wait-widget.wait { background: #2b2200; border-color: #ca8a04; }
+.bw-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+.bw-decision { font-size: 1.1rem; font-weight: 700; }
+.bw-score { color: #aaa; font-size: 0.85rem; }
+.bw-reasons { padding-left: 1.25rem; color: #ccc; font-size: 0.9rem; }
+.bw-reasons li { margin-bottom: 0.25rem; }
+
+.summary-bar {
+  display: flex; gap: 1.5rem; color: #888; font-size: 0.85rem;
+  margin-bottom: 1rem; flex-wrap: wrap;
+}
+
+.optimal-card {
+  background: #0d2b1a; border: 1px solid #16a34a; border-radius: 10px;
+  padding: 1rem 1.25rem; margin-bottom: 1.25rem;
+}
+.optimal-label { color: #4ade80; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+.optimal-details { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; }
+.optimal-details .price { font-size: 1.5rem; font-weight: 700; color: #4ade80; }
+
+.no-results { color: #888; padding: 1rem 0; }
+
+.flights-table-wrap h3 { margin-bottom: 0.75rem; font-size: 1rem; color: #aaa; }
+.flights-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.flights-table th { text-align: left; color: #888; padding: 0.5rem; border-bottom: 1px solid #2e3347; }
+.flights-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid #1e2130; }
+.optimal-row td { background: #0d2b1a; color: #4ade80; }

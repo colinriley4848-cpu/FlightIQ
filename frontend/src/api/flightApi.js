@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://flightiq.onrender.com";
 
 export async function searchFlights(payload) {
   const res = await fetch(`${API_BASE}/search`, {
